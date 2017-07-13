@@ -1,0 +1,54 @@
+[ 2017-07-12T17:46:10+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000462s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017200s ]
+
+[ 2017-07-12T17:46:13+08:00 ] 127.0.0.1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000527s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005570s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.1176s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002199s ]
+
+[ 2017-07-12T17:46:18+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000501s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003239s ]
+ERR: Can't connect to 127.0.0.1:6379
+
+[ 2017-07-12T17:46:34+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000264s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003299s ]
+ERR: Can't connect to 127.0.0.1:6379
+
+[ 2017-07-12T17:47:23+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000340s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003540s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001973s ]
+
+[ 2017-07-12T17:47:24+08:00 ] 127.0.0.1 /caipiao/Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000375s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003114s ]
+

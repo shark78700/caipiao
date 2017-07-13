@@ -1,0 +1,44 @@
+[ 2016-12-07T17:17:28+08:00 ] ::1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009877s ]
+
+[ 2016-12-07T17:18:13+08:00 ] ::1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.1108s ]
+SQL: SELECT * FROM `bocai_user` WHERE `user_name` = 'root'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002717s ]
+
+[ 2016-12-07T17:18:29+08:00 ] ::1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `bocai_user` WHERE `user_name` = 'kkk'  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002966s ]
+
+[ 2016-12-07T17:18:44+08:00 ] ::1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `bocai_user` WHERE `user_name` = 'kkk'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003415s ]
+

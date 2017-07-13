@@ -1,0 +1,11 @@
+h1{
+
+    width:60%;height: 20%; position: absolute;top: 20px;left: 20%; text-align: center;
+}
+#content{
+
+    width: 40%; height:40%; position: absolute; top: 30%;left: 30%;
+}
+p{
+    color: red;
+}

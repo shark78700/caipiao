@@ -1,0 +1,15 @@
+[ 2017-05-02T13:27:59+08:00 ] ::1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001585s ]
+
+[ 2017-05-02T13:38:21+08:00 ] ::1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001890s ]
+
+[ 2017-05-02T14:19:42+08:00 ] ::1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000238s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041825s ]
+

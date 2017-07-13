@@ -1,0 +1,224 @@
+[ 2017-06-20T13:54:14+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000264s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038483s ]
+
+[ 2017-06-20T13:54:31+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000272s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002234s ]
+
+[ 2017-06-20T13:54:33+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000144s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001460s ]
+
+[ 2017-06-20T13:55:07+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001905s ]
+
+[ 2017-06-20T13:56:37+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001676s ]
+
+[ 2017-06-20T14:05:24+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001580s ]
+
+[ 2017-06-20T14:13:29+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000195s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002053s ]
+
+[ 2017-06-20T14:13:58+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000360s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003727s ]
+
+[ 2017-06-20T15:01:19+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000189s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001864s ]
+
+[ 2017-06-20T15:01:22+08:00 ] 127.0.0.1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002761s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002320s ]
+
+[ 2017-06-20T15:01:30+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002354s ]
+ERR: Can't connect to 127.0.0.1:6379
+
+[ 2017-06-20T15:03:59+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000211s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002502s ]
+
+[ 2017-06-20T15:04:34+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000268s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002670s ]
+ERR: Can't connect to 127.0.0.1:6379
+
+[ 2017-06-20T15:05:56+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002400s ]
+ERR: Can't connect to 127.0.0.1:6379
+
+[ 2017-06-20T15:13:56+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000356s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+
+[ 2017-06-20T15:13:56+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000191s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001940s ]
+
+[ 2017-06-20T15:15:32+08:00 ] 127.0.0.1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000221s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003727s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002227s ]
+
+[ 2017-06-20T15:15:48+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002920s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002243s ]
+
+[ 2017-06-20T15:16:09+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000325s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002243s ]
+
+[ 2017-06-20T15:16:25+08:00 ] 127.0.0.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000243s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002317s ]
+
+[ 2017-06-20T15:16:28+08:00 ] 127.0.0.1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003004s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002286s ]
+
+[ 2017-06-20T15:19:11+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003721s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0007s ]
+
+[ 2017-06-20T15:19:11+08:00 ] 127.0.0.1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000182s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003133s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003689s ]
+
+[ 2017-06-20T15:19:17+08:00 ] 127.0.0.1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000207s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002899s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003430s ]
+
+[ 2017-06-20T15:19:17+08:00 ] 127.0.0.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000299s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002687s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003080s ]
+
+[ 2017-06-20T15:19:17+08:00 ] 127.0.0.1 /caipiao/Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000215s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001942s ]
+
+[ 2017-06-20T15:20:55+08:00 ] 127.0.0.1 /caipiao/Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000208s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001858s ]
+ERR: 1146:Table 'caipiao.bocai_letou' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `bocai_letou`
+

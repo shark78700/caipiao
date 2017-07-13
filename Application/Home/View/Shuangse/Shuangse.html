@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="__PUBLIC__/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/bootstrap-3.3.5-dist/js/jquery-3.1.0.js"></script>
+    <script src="__PUBLIC__/bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+
+        h1{
+            text-align: center;
+            color: #ff0018;
+        }
+        td{
+            text-align: center;
+            font-size: 5px;
+        }
+        /*.page span{
+            display: block;
+            width: auto;
+        }
+        .page a{
+            display: block!important;
+            width: auto;
+        }*/
+        .page div{
+
+            width: 80%;
+            margin: auto;
+            font-size: 24px;
+
+        }
+
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var tdl=$('td').length;
+            for(var i=0;i<tdl;i++){
+
+                if($('td').eq(i).html().substr(0,1)==','){
+                    var mystr=$('td').eq(i).html().substr(1);
+                    $('td').eq(i).html(mystr);
+                    $('td').eq(i).css('background-color','#DDA0DD');
+                }
+            }
+
+
+        })
+
+    </script>
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-12"><h1>双色球</h1></div>
+    </div>
+    <div class="row">
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover" style="margin-left: 1%">
+                <tr class="info">
+                    <td></td>
+                    <td colspan="33">红球</td>
+                    <td colspan="16">蓝球</td>
+                    <td colspan="7">开奖</td>
+                </tr>
+                <tr class="success">
+
+                    <td>期数</td>
+                    <volist name="reball" id="reb">
+                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
+                    </volist>
+                    <volist name="buleball" id="bub">
+                    <td><img src="__PUBLIC__/image/blueball.png" width="15px" height="15px"></td></volist>
+                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
+                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
+                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
+                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
+                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
+                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
+                    <td><img src="__PUBLIC__/image/blueball.png" width="15px" height="15px"></td>
+                   <!-- <td>开奖时间</td>-->
+                </tr>
+                <volist name="jiang" id="jiang">
+                    <tr class="danger">
+
+                        <td>{{$jiang.times}}</td>
+
+                        <volist name="jiang.allred" id="reb">
+                            <td name="red">{{$reb}}</td>
+                        </volist>
+                        <volist name="jiang.allblue" id="bub">
+                            <td style="background-color: #b9def0 ">{{$bub}}</td></volist>
+                        <td>{{$jiang.red1}}</td>
+                        <td>{{$jiang.red2}}</td>
+                        <td>{{$jiang.red3}}</td>
+                        <td>{{$jiang.red4}}</td>
+                        <td>{{$jiang.red5}}</td>
+                        <td>{{$jiang.red6}}</td>
+                        <td style="background-color: #b9def0 ">{{$jiang.blue}}</td>
+                      <!--  <td>{{}}</td>-->
+                    </tr>
+                </volist>
+                <tr>
+                    <td>当前遗漏：</td>
+
+                </tr>
+                <tr>
+                    <td>出现总次数：</td>
+                    <volist name="timesshuangse.red" id="tsr">
+                        <td>{{$tsr}}</td>
+                    </volist>
+                    <volist name="timesshuangse.blue" id="tsb">
+                        <td>{{$tsb}}</td>
+                    </volist>
+                </tr>
+                <tr>
+                    <td></td>
+
+                </tr>
+            </table>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-4 page" >
+
+               {{$show}}
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+
+    </div>
+
+
+</body>
+</html>

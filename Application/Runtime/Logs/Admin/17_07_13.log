@@ -1,0 +1,18 @@
+[ 2017-07-13T10:35:09+08:00 ] 127.0.0.1 /caipiao/Admin/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000304s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002973s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-07-13T10:36:03+08:00 ] 127.0.0.1 /caipiao/Admin/Login/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000332s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003372s ]
+ERR: 无法加载控制器:Login
+
+[ 2017-07-13T10:36:07+08:00 ] 127.0.0.1 /caipiao/Admin/Login/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000357s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003703s ]
+ERR: 无法加载控制器:Login
+

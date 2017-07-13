@@ -1,0 +1,12 @@
+[ 2016-10-31T11:18:46+08:00 ] ::1 /caipiao/Public/image/bullball.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-31T11:28:14+08:00 ] ::1 /caipiao/Public/image/buleball.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+ERR: 无法加载模块:Public
+
