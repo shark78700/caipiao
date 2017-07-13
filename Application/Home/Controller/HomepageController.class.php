@@ -63,7 +63,7 @@ class HomepageController extends Controller
                $leto=M('letou');
                $yesterkaijiang='大乐透';
 
-               if(count($info=$leto->order('times','desc')->limit(1)->select())==1){
+               if(count($info=$leto->order('times desc')->limit(1)->select())==1){
                    $kainumber1=null;
                    foreach ($info as $key=>$value){
                        $kainumber=$info[$key]['allcode'];
@@ -96,7 +96,7 @@ class HomepageController extends Controller
                    $tmap['kai_time'] = strtotime(date('Y-m-d', strtotime('today')));
 
                    $shuangse=M('shuangse');
-                   if(count($tinfo = $shuangse->order('times','desc')->limit(1)->select())==1) {
+                   if(count($tinfo = $shuangse->order('times desc')->limit(1)->select())==1) {
                            $todaynumber = $tinfo[0]['allcode'];
                    }else {
                        $todaynumber = '已开奖，数据待跟新';

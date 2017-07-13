@@ -131,7 +131,7 @@ class PaleController extends Controller
     {
         $this->assign('url', 'Pale/Pale');
         $this->assign('title', '大乐透获取数据');
-        $this->display('curl/curl');
+        $this->display('Curl/Curl');
     }
 
 }

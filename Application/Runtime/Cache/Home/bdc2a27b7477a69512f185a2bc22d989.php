@@ -71,15 +71,15 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-4"><h2><a href="/caipiao/Home/Shuangse/Shuangse">双色球</a></h2>
+    <div class="col-lg-6"><h2><a href="/caipiao/Admin/Curl/Show">双色球</a></h2>
 
     </div>
-    <div class="col-lg-4"><h2><a>大乐透</a></h2>
+    <div class="col-lg-6"><h2 href="/caipiao/Admin/Pale/Show"><a>大乐透</a></h2>
 
     </div>
-    <div class="col-lg-4"><h2><a>足彩</a></h2>
+   <!-- <div class="col-lg-4"><h2><a>足彩</a></h2>
 
-    </div>
+    </div>-->
 
 </div>
 </body>

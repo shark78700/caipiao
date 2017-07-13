@@ -58,9 +58,6 @@
                             $("p[name='respo']").html(address+'网址出错请确认页面可以访问');
 
                         }
-                        else{
-                           console.log(data);
-                        }
                     }
                 })
                 return false;
