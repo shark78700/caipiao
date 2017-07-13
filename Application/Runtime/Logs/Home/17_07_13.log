@@ -148,3 +148,53 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000328s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
 
+[ 2017-07-13T11:32:20+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2017-07-13T11:40:11+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+
+[ 2017-07-13T11:40:58+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000256s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+
+[ 2017-07-13T11:41:12+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-07-13T11:41:41+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+
+[ 2017-07-13T11:41:53+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+
+[ 2017-07-13T11:43:46+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-07-13T11:43:59+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+
+[ 2017-07-13T11:44:26+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+
+[ 2017-07-13T11:44:48+08:00 ] 192.168.20.1 /caipiao/index.php/Home/Test/Test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+
