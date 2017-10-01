@@ -1,0 +1,42 @@
+[ 2017-07-21T14:27:46+08:00 ] 192.168.20.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000686s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003341s ]
+ERR: Redis server went away
+
+[ 2017-07-21T14:28:09+08:00 ] 192.168.20.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+
+[ 2017-07-21T14:28:11+08:00 ] 192.168.20.1 /caipiao/Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000571s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2017-07-21T14:28:14+08:00 ] 192.168.20.1 /caipiao/Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-07-21T14:28:14+08:00 ] 192.168.20.1 /caipiao/Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000159s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001541s ]
+

@@ -1,0 +1,66 @@
+[ 2017-10-01T15:54:12+08:00 ] 192.168.20.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002129s ]
+
+[ 2017-10-01T15:54:59+08:00 ] 192.168.20.1 /Home/Login/Username
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-10-01T15:55:04+08:00 ] 192.168.20.1 /Home/Login/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `bocai_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bocai_user` WHERE `u_name` = 'root'  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-10-01T15:55:04+08:00 ] 192.168.20.1 /Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-10-01T15:56:43+08:00 ] 192.168.20.1 /Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+
+[ 2017-10-01T15:56:44+08:00 ] 192.168.20.1 /Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+
+[ 2017-10-01T15:57:13+08:00 ] 192.168.20.1 /Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+
+[ 2017-10-01T15:57:36+08:00 ] 192.168.20.1 /Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+
+[ 2017-10-01T16:01:17+08:00 ] 192.168.20.1 /Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+
+[ 2017-10-01T16:01:18+08:00 ] 192.168.20.1 /Home/Homepage/Homepage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+

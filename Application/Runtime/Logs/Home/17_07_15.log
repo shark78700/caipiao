@@ -1,0 +1,5 @@
+[ 2017-07-15T14:26:26+08:00 ] 192.168.20.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000841s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005030s ]
+

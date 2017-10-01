@@ -59,65 +59,116 @@ class CurlController extends Controller
                         $yilou[$key][] = 0;
                     }
                     if (strpos($value1, 'yl02') !== false || strpos($value1, 'yl01') !== false || strpos($value1, 'bg_p') !== false) {
-                        preg_match_all('/\d+/', $value1, $arry);
-                        $yilou[$key][] = $arry[0][1];
+                        if(strpos($value1, 'bg_p') !== false){
+                            preg_match_all('/\d+/', $value1, $arry);
+                            $yilou[$key][] = $arry[0][0];
+                        }else {
+                            preg_match_all('/\d+/', $value1, $arry);
+                            $yilou[$key][] = $arry[0][1];
+                        }
                     }
                 }
             }
 
+            $semap['times'] = array();
+            foreach ($last as $key => $value) {
+                $semap['times'][] = array('EQ', $last[$key]['time']);
+            }
+            $semap['times'][] = 'or';
+
+            $shuangse = M('shuangse');
+            $shuangse1 = $shuangse->field('times')->where($semap)->select();
+
+
+            if ($shuangse1) {
+                foreach ($last as $key => $value) {
+                    foreach ($shuangse1 as $key1 => $value1) {
+                        if ($shuangse1[$key1]['times'] == $last[$key]['time']) {
+                            $last[$key]['status'] = 2;
+                        }
+                    }
+                }
+            }
+
+            $falg = 0;
             $model = new Model();
             $model->startTrans();
 
-            $falg = 0;
 
             foreach ($last as $key => $value) {
-                $map = null;
-                $data = null;
-                $map['times'] = $last[$key]['time'];
-                $data['times'] = $map['times'];
-                foreach ($yilou[$key] as $key1 => $value1) {
-                    if ($value1 == 0) {
-                        $value1 = '0';
+                if (!isset($last[$key]['status']) || $last[$key]['status'] != 2) {
+                    $map = null;
+                    $data = null;
+                    $map['times'] = $last[$key]['time'];
+                    $data['times'] = $map['times'];
+                    foreach ($yilou[$key] as $key1 => $value1) {
+                        if ($value1 == 0) {
+                            $value1 = '0';
+                        }
+                        if ($key1 <= 32) {
+                            $data['redyilou'][] = $value1;
+                        } else {
+                            $data['blueyilou'][] = $value1;
+                        }
                     }
-                    if ($key1 <= 32) {
-                        $data['redyilou'][] = $value1;
+                    for ($i = 1; $i < 8; $i++) {
+                        if ($i != 7) {
+                            $map['allcode'] .= $last[$key][$i - 1] . ',';
+                            $map['red' . $i] = $last[$key][$i - 1];
+                        } else {
+                            $map['allcode'] .= $last[$key][$i - 1];
+                            $map['blue'] = $last[$key][$i - 1];
+                        }
+                    }
+                    if ($model->table('bocai_shuangse')->add($map)) {
+                        $falg = 1;
                     } else {
-                        $data['blueyilou'][] = $value1;
+                        $falg = 0;
+                        $model->rollback();
+                        echo 2;
+                        exit();
                     }
-                }
-                for ($i = 1; $i < 8; $i++) {
-                    if ($i != 7) {
-                        $map['allcode'] .= $last[$key][$i - 1] . ',';
-                        $map['red' . $i] = $last[$key][$i - 1];
+                    $data['redyilou'] = json_encode($data['redyilou']);
+                    $data['blueyilou'] = json_encode($data['blueyilou']);
+                    if ($model->table('bocai_shuangseyi')->add($data)) {
+                        $falg = 1;
                     } else {
-                        $map['allcode'] .= $last[$key][$i - 1];
-                        $map['blue'] = $last[$key][$i - 1];
+                        $falg = 0;
+                        $model->rollback();
+                        echo 2;
+                        exit();
                     }
                 }
-                if ($model->table('bocai_shuangse')->add($map)) {
-                    $falg = 1;
-                } else {
-                    $falg = 0;
-                    $model->rollback();
-                    echo 2;
-                    exit();
-                }
-                $data['redyilou'] = json_encode($data['redyilou']);
-                $data['blueyilou'] = json_encode($data['blueyilou']);
-                if ($model->table('bocai_shuangseyi')->add($data)) {
-                    $falg = 1;
-                } else {
-                    $falg = 0;
-                    $model->rollback();
-                    echo 2;
-                    exit();
-                }
-
             }
             if ($falg == 1) {
                 $model->commit();
-                echo 1;
-                exit();
+               /* $allcode=$shuangse->field('allcode')->select();
+                $jilv=array();
+                for($i=1;$i<=33;$i++){
+                    $jilv[]=0;
+                }
+                foreach ($allcode as $key=>$value){
+                    $thisarr=explode(',',$allcode);
+                    foreach ($thisarr as $key1 =>$value1){
+                        for($i=1;$i<=33;$i++){
+                            if($i==$value1){
+                                $jilv[$i]++;
+                            }
+                        }
+                    }
+                }
+                for($i=1;$i<=33;$i++){
+                    $jilv[$i]=$jilv[$i]/count($allcode);
+                }
+                $lv['times']=$map['times'];
+                $lv['bai']=json_encode($jilv);
+                if(M('shaungsebai')->save($lv)) {*/
+                    echo 1;
+                    exit();
+               /* }else{
+                    echo 5;
+                    exit();
+                }*/
             } else {
                 $model->rollback();
                 echo 2;
@@ -128,6 +179,9 @@ class CurlController extends Controller
 
     function Show()
     {
+        if(IS_GET){
+            $this->assign('times',$_GET['times']);
+        }
         $this->assign('url', 'Curl/Curl');
         $this->assign('title', '双色球获取数据');
         $this->display('Curl/Curl');

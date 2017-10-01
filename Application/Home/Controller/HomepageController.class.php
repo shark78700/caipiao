@@ -28,14 +28,20 @@ class HomepageController extends Controller
                $shuangse = M('shuangse');
                $yesterkaijiang = '双色球';
                $this->assign('yesterkai', $yesterkaijiang);
-               if (count($info = $shuangse->order('times','desc')->limit(1)->select()) == 1) {
-
-                   foreach ($info as $key => $value) {
-                       $kainumber = $info[$key]['allcode'];
+               if (count($info = $shuangse->order('times desc')->limit(1)->select()) == 1) {
+                   $times=$info[0]['times'];
+                   $kainumber = explode(',',$info[0]['allcode']);
+                   $sum=count($kainumber);
+                   $mystr = '';
+                   for($i=0;$i<$sum;$i++){
+                       if($i==6){
+                           $mystr.='<span style="color: blue">'.$kainumber[$i].'</span>';
+                       }else{
+                           $mystr.='<span style="color: red">'.$kainumber[$i].'</span>,';
+                       }
                    }
-                
 
-                   $this->assign('yesternumber', $kainumber);
+                   $this->assign('yesternumber', $mystr);
                } else {
 
                    $this->assign('yesternumber', '数据待跟新');
@@ -46,13 +52,27 @@ class HomepageController extends Controller
                } else {
                    $tmap['kai_time'] = strtotime(date('Y-m-d', strtotime('today')));
                    $leto = M('letou');
-                   if (count($tinfo = $leto->order('times','desc')->limit(1)->select())==1){
-                       $todaynumber=$tinfo[0]['allcode'];
+                   if (count($tinfo = $leto->order('times desc')->limit(1)->select())==1){
+                       $times=$tinfo[0]['times'];
+                       $kainumber = explode(',',$tinfo[0]['allcode']);
+                       $sum=count($kainumber);
+                       $mystr = '';
+                       for($i=0;$i<$sum;$i++){
+                           if($i==6){
+                               $mystr.='<span style="color: blue">'.$kainumber[$i].'</span>';
+                           }elseif(i==5){
+                               $mystr.='<span style="color: blue">'.$kainumber[$i].'</span>,';
+                           }else{
+                               $mystr.='<span style="color: red">'.$kainumber[$i].'</span>,';
+                           }
+                       }
+
+                       $todaynumber=$mystr;
                    }else {
                        $todaynumber = '已开奖，数据待跟新';
                    }
                }
-
+               $this->assign('times',$times);
                $this->assign('todaykai', $todaykaijiang);
                $this->assign('todaynumber', $todaynumber);
 
@@ -64,25 +84,23 @@ class HomepageController extends Controller
                $yesterkaijiang='大乐透';
 
                if(count($info=$leto->order('times desc')->limit(1)->select())==1){
-                   $kainumber1=null;
+                   $times=$info[0]['times'];
+                   $mystr='';
                    foreach ($info as $key=>$value){
                        $kainumber=$info[$key]['allcode'];
                    }
                    $kainumber=explode(',',$kainumber);
                    for($i=0;$i<count($kainumber);$i++){
-                       if($i==count($kainumber)-2){
-                           $kainumber1.=' | 蓝球 '.$kainumber[$i];
-                       }elseif($i==count($kainumber)-1){
-                           $kainumber1.=' , '.$kainumber[$i];
-                       }
-                       elseif($i==0){
-                           $kainumber1.='红球 '.$kainumber[$i];
+                       if($i==6){
+                           $mystr.='<span style="color: blue">'.$kainumber[$i].'</span>';
+                       }elseif($i==5){
+                           $mystr.='<span style="color: blue">'.$kainumber[$i].'</span>,';
                        }else{
-                           $kainumber1.=' , '.$kainumber[$i];
+                           $mystr.='<span style="color: red">'.$kainumber[$i].'</span>,';
                        }
                    }
 
-                   $this->assign('yesternumber',$kainumber1);
+                   $this->assign('yesternumber',$mystr);
                }else{
 
                    $this->assign('yesternumber','数据待跟新');
@@ -97,11 +115,24 @@ class HomepageController extends Controller
 
                    $shuangse=M('shuangse');
                    if(count($tinfo = $shuangse->order('times desc')->limit(1)->select())==1) {
-                           $todaynumber = $tinfo[0]['allcode'];
+                       $times=$tinfo[0]['times'];
+                       $kainumber = explode(',',$info[0]['allcode']);
+                       $sum=count($kainumber);
+                       $mystr = '';
+                       for($i=0;$i<$sum;$i++){
+                           if($i==6){
+                               $mystr.='<span style="color: blue">'.$kainumber[$i].'</span>';
+                           }else{
+                               $mystr.='<span style="color: red">'.$kainumber[$i].'</span>,';
+                           }
+                       }
+                       $todaynumber=$mystr;
+
                    }else {
                        $todaynumber = '已开奖，数据待跟新';
                    }
            }
+               $this->assign('times',$times);
                $this->assign('todaykai',$todaykaijiang);
                $this->assign('todaynumber',$todaynumber);
                $this->assign('today',date('Y-m-d'),strtotime('today'));

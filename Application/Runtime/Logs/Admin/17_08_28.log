@@ -1,0 +1,275 @@
+[ 2017-08-28T10:54:37+08:00 ] 192.168.20.1 /caipiao/Admin/Pale/Show/times/2017098
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-08-28T10:56:40+08:00 ] 192.168.20.1 /caipiao/Admin/Curl/Show/times/2017098
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+
+[ 2017-08-28T10:56:44+08:00 ] 192.168.20.1 /caipiao/Admin/Curl/Curl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000224s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [2048] Declaration of Admin\Controller\CurlController::Show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0023s ]
+SQL: SELECT `times` FROM `bocai_shuangse` WHERE ( `times` = '2017098' OR `times` = '2017099' )  [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: allcode /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0034s ]
+SQL: INSERT INTO `bocai_shuangse` (`times`,`allcode`,`red1`,`red2`,`red3`,`red4`,`red5`,`red6`,`blue`) VALUES ('2017099','02,05,06,16,28,29,04','02','05','06','16','28','29','04') [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyi` [ RunTime:0.0026s ]
+SQL: INSERT INTO `bocai_shuangseyi` (`times`,`redyilou`,`blueyilou`) VALUES ('2017099','[\"9\",\"0\",\"12\",\"1\",\"0\",\"0\",\"6\",\"5\",\"4\",\"2\",\"3\",\"3\",\"5\",\"12\",\"6\",\"0\",\"22\",\"2\",\"1\",\"13\",\"17\",\"1\",\"8\",\"15\",\"10\",\"16\",\"1\",\"0\",\"0\",\"1\",\"2\",\"7\",\"1\"]','[\"1\",\"15\",\"2\",\"0\",\"18\",\"3\",\"13\",\"19\",\"7\",\"17\",\"38\",\"6\",\"23\",\"22\",\"31\",\"4\"]') [ RunTime:0.0021s ]
+
+[ 2017-08-28T10:56:53+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003205s ]
+
+[ 2017-08-28T10:56:58+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Indata/times/2017098
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyuce` [ RunTime:0.0008s ]
+SQL: SELECT `times` FROM `bocai_shuangseyuce` ORDER BY times desc LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-08-28T10:57:01+08:00 ] 192.168.20.1 /caipiao/Admin/Curl/Show/times/2017098
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-08-28T10:57:02+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2017-08-28T10:57:04+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Indata/times/2017098
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyuce` [ RunTime:0.0009s ]
+SQL: SELECT `times` FROM `bocai_shuangseyuce` ORDER BY times desc LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-08-28T10:57:10+08:00 ] 192.168.20.1 /caipiao/Admin/Curl/Show/times/2017099
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+
+[ 2017-08-28T10:57:12+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2017-08-28T10:57:14+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2017-08-28T10:57:15+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2017-08-28T10:57:16+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Indata/times/2017099
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyuce` [ RunTime:0.0007s ]
+SQL: SELECT `times` FROM `bocai_shuangseyuce` ORDER BY times desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `bocai_shuangseyuce` (`code`,`times`) VALUES ('[\'24\', \'25\', \'21\', \'23\', \'15\', \'33\', \'8\', \'2\']','2017100') [ RunTime:0.0047s ]
+
+[ 2017-08-28T10:57:33+08:00 ] 192.168.20.1 /caipiao/Admin/Curl/Curl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000610s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [2048] Declaration of Admin\Controller\CurlController::Show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0024s ]
+SQL: SELECT `times` FROM `bocai_shuangse` WHERE ( `times` = '2017098' OR `times` = '2017099' OR `times` = '2017100' )  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: allcode /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0060s ]
+SQL: INSERT INTO `bocai_shuangse` (`times`,`allcode`,`red1`,`red2`,`red3`,`red4`,`red5`,`red6`,`blue`) VALUES ('2017100','04,07,08,18,23,24,02','04','07','08','18','23','24','02') [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyi` [ RunTime:0.0017s ]
+SQL: INSERT INTO `bocai_shuangseyi` (`times`,`redyilou`,`blueyilou`) VALUES ('2017100','[\"10\",\"1\",\"13\",\"0\",\"1\",\"1\",\"0\",\"0\",\"5\",\"3\",\"4\",\"4\",\"6\",\"13\",\"7\",\"1\",\"23\",\"0\",\"2\",\"14\",\"18\",\"2\",\"0\",\"0\",\"11\",\"17\",\"2\",\"1\",\"1\",\"2\",\"3\",\"8\",\"2\"]','[\"2\",\"0\",\"3\",\"1\",\"19\",\"4\",\"14\",\"20\",\"8\",\"18\",\"39\",\"7\",\"24\",\"23\",\"32\",\"5\"]') [ RunTime:0.0015s ]
+
+[ 2017-08-28T10:57:37+08:00 ] 192.168.20.1 /caipiao/Admin/Curl/Show/times/2017100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-08-28T10:57:40+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2017-08-28T10:57:42+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Indata/times/2017100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyuce` [ RunTime:0.0008s ]
+SQL: SELECT `times` FROM `bocai_shuangseyuce` ORDER BY times desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `bocai_shuangseyuce` (`code`,`times`) VALUES ('[\'11\', \'25\', \'9\', \'15\', \'21\', \'28\', \'8\', \'4\']','2017101') [ RunTime:0.0032s ]
+
+[ 2017-08-28T11:00:06+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2017-08-28T11:00:16+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-08-28T11:00:24+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2017-08-28T11:00:37+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2017-08-28T11:00:39+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-08-28T11:00:58+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2017-08-28T11:00:59+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2017-08-28T11:01:00+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-08-28T11:01:00+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2017-08-28T11:01:01+08:00 ] 192.168.20.1 /caipiao/Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+

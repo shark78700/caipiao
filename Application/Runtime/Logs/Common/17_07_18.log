@@ -1,0 +1,174 @@
+[ 2017-07-18T11:41:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-07-18T11:41:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-07-18T11:43:45+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/jquery-3.1.0.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-18T11:43:45+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-18T11:43:45+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-18T11:43:45+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/Login.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-18T11:43:45+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-18T11:43:45+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-18T11:43:45+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/Login.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:Public
+
+[ 2017-07-18T13:03:20+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/jquery-3.1.0.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:20+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:20+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:20+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/Login.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:20+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:20+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:20+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/Login.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:21+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/jquery-3.1.0.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:21+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:21+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:21+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/Login.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:21+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:21+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:21+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/Login.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:22+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/jquery-3.1.0.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:22+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/js/bootstrap.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:22+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:22+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/Login.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T13:03:22+08:00 ] 127.0.0.1 /Public/bootstrap-3.3.5-dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 无法加载模块:404
+
+[ 2017-07-18T14:11:20+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+ERR: 无法加载模块:Favicon
+

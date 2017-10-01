@@ -58,68 +58,94 @@ class PaleController extends Controller
                         $yilou[$key][] = 0;
                     }
                     if (strpos($value1, 'yl02') !== false || strpos($value1, 'yl01') !== false || strpos($value1, 'bg_p') !== false) {
-                        preg_match_all('/\d+/', $value1, $arry);
-                        $yilou[$key][] = $arry[0][1];
+                        if  (strpos($value1, 'bg_p') !== false){
+                            preg_match_all('/\d+/', $value1, $arry);
+                            $yilou[$key][] = $arry[0][0];
+                        }else {
+                            preg_match_all('/\d+/', $value1, $arry);
+                            $yilou[$key][] = $arry[0][1];
+                        }
                     }
                 }
             }
+
+
+            foreach ($last as $key => $value) {
+                $semap['times'][] = array('EQ', $last[$key]['time']);
+            }
+            $semap['times'][] = 'or';
+
+            $letou = M('letou');
+            $letou1 = $letou->field('times')->where($semap)->select();
+
+
+            if ($letou1) {
+                foreach ($last as $key => $value) {
+                    foreach ($letou1 as $key1 => $value1) {
+                        if ($letou1[$key1]['times'] == $last[$key]['time']) {
+                            $last[$key]['status'] = 2;
+                        }
+                    }
+                }
+            }
+
 
             $model = new Model();
             $model->startTrans();
             $flag = 0;
             foreach ($last as $key => $value) {
-                $map = null;
-                $data = null;
-                $map['times'] = $last[$key]['time'];
-                $data['times'] = $map['times'];
-                foreach ($yilou[$key] as $key1 => $value1) {
-                    if ($value1 == 0) {
-                        $value1 = '0';
-                    }
-                    if ($key1 <= 34) {
-                        $data['redyi'][] = $value1;
-                    } else {
-                        $data['blueyi'][] = $value1;
-                    }
-                }
-                for ($i = 1; $i < 8; $i++) {
-                    if ($i <= 5) {
-                        $map['allcode'] .= $last[$key][$i - 1] . ',';
-                        $map['red' . $i] = $last[$key][$i - 1];
-                    } else {
-                        if ($i == 6) {
-                            $map['allcode'] .= $last[$key][$i - 1] . ',';
-                            $map['blue1'] = $last[$key][$i - 1];
+                if (!isset($last[$key]['status']) || $last[$key]['status'] != 2) {
+                    $map = null;
+                    $data = null;
+                    $map['times'] = $last[$key]['time'];
+                    $data['times'] = $map['times'];
+                    foreach ($yilou[$key] as $key1 => $value1) {
+                        if ($value1 == 0) {
+                            $value1 = '0';
+                        }
+                        if ($key1 <= 34) {
+                            $data['redyi'][] = $value1;
                         } else {
-                            $map['allcode'] .= $last[$key][$i - 1];
-                            $map['blue2'] = $last[$key][$i - 1];
+                            $data['blueyi'][] = $value1;
                         }
                     }
+                    for ($i = 1; $i < 8; $i++) {
+                        if ($i <= 5) {
+                            $map['allcode'] .= $last[$key][$i - 1] . ',';
+                            $map['red' . $i] = $last[$key][$i - 1];
+                        } else {
+                            if ($i == 6) {
+                                $map['allcode'] .= $last[$key][$i - 1] . ',';
+                                $map['blue1'] = $last[$key][$i - 1];
+                            } else {
+                                $map['allcode'] .= $last[$key][$i - 1];
+                                $map['blue2'] = $last[$key][$i - 1];
+                            }
+                        }
+                    }
+                    $data['redyi'] = json_encode($data['redyi']);
+                    $data['blueyi'] = json_encode($data['blueyi']);
+                    if ($model->table('bocai_letou')->add($map)) {
+                        $flag = 1;
+                    } else {
+                        $model->rollback();
+                        echo 2;
+                        exit();
+                    }
+                    if ($model->table('bocai_leyi')->add($data)) {
+                        $flag = 1;
+                    } else {
+                        $model->rollback();
+                        echo 2;
+                        exit();
+                    }
                 }
-                $data['redyi'] = json_encode($data['redyi']);
-                $data['blueyi'] = json_encode($data['blueyi']);
-                if ($model->table('bocai_letou')->add($map)) {
-                    $flag = 1;
-                } else {
-                    $model->rollback();
-                    echo 2;
-                    exit();
-                }
-                if ($model->table('bocai_leyi')->add($data)) {
-                    $flag = 1;
-                } else {
-                    $model->rollback();
-                    echo 2;
-                    exit();
-                }
-
-
             }
             if ($flag == 1) {
                 $model->commit();
                 echo 1;
                 exit();
-            }else{
+            } else {
                 $model->rollback();
                 echo 2;
                 exit();
@@ -129,6 +155,9 @@ class PaleController extends Controller
 
     public function Show()
     {
+        if($_GET['times']!=null) {
+            $this->assign('times', $_GET['times']);
+        }
         $this->assign('url', 'Pale/Pale');
         $this->assign('title', '大乐透获取数据');
         $this->display('Curl/Curl');
