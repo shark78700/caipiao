@@ -29,7 +29,7 @@ class HomepageController extends Controller
                $yesterkaijiang = '双色球';
                $this->assign('yesterkai', $yesterkaijiang);
                if (count($info = $shuangse->order('times desc')->limit(1)->select()) == 1) {
-                   $times=$info[0]['times'];
+                   $stimes=$info[0]['times'];
                    $kainumber = explode(',',$info[0]['allcode']);
                    $sum=count($kainumber);
                    $mystr = '';
@@ -53,7 +53,7 @@ class HomepageController extends Controller
                    $tmap['kai_time'] = strtotime(date('Y-m-d', strtotime('today')));
                    $leto = M('letou');
                    if (count($tinfo = $leto->order('times desc')->limit(1)->select())==1){
-                       $times=$tinfo[0]['times'];
+                       $ltimes=$tinfo[0]['times'];
                        $kainumber = explode(',',$tinfo[0]['allcode']);
                        $sum=count($kainumber);
                        $mystr = '';
@@ -72,7 +72,8 @@ class HomepageController extends Controller
                        $todaynumber = '已开奖，数据待跟新';
                    }
                }
-               $this->assign('times',$times);
+               $this->assign('stimes',$stimes);
+               $this->assign('ltimes',$ltimes);
                $this->assign('todaykai', $todaykaijiang);
                $this->assign('todaynumber', $todaynumber);
 
@@ -84,7 +85,7 @@ class HomepageController extends Controller
                $yesterkaijiang='大乐透';
 
                if(count($info=$leto->order('times desc')->limit(1)->select())==1){
-                   $times=$info[0]['times'];
+                   $ltimes=$info[0]['times'];
                    $mystr='';
                    foreach ($info as $key=>$value){
                        $kainumber=$info[$key]['allcode'];
@@ -115,7 +116,7 @@ class HomepageController extends Controller
 
                    $shuangse=M('shuangse');
                    if(count($tinfo = $shuangse->order('times desc')->limit(1)->select())==1) {
-                       $times=$tinfo[0]['times'];
+                       $stimes=$tinfo[0]['times'];
                        $kainumber = explode(',',$info[0]['allcode']);
                        $sum=count($kainumber);
                        $mystr = '';
@@ -132,7 +133,8 @@ class HomepageController extends Controller
                        $todaynumber = '已开奖，数据待跟新';
                    }
            }
-               $this->assign('times',$times);
+               $this->assign('stimes',$stimes);
+               $this->assign('ltimes',$ltimes);
                $this->assign('todaykai',$todaykaijiang);
                $this->assign('todaynumber',$todaynumber);
                $this->assign('today',date('Y-m-d'),strtotime('today'));
