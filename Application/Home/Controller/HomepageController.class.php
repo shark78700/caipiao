@@ -49,6 +49,10 @@ class HomepageController extends Controller
                $todaykaijiang = '大乐透';
                if (date('G') <= 22) {
                    $todaynumber = '未开';
+                   $leto = M('letou');
+                   if (count($tinfo = $leto->order('times desc')->limit(1)->select())==1) {
+                       $ltimes = $tinfo[0]['times'];
+                   }
                } else {
                    $tmap['kai_time'] = strtotime(date('Y-m-d', strtotime('today')));
                    $leto = M('letou');
@@ -110,10 +114,13 @@ class HomepageController extends Controller
 
                $todaykaijiang='双色球';
                if(date('G')<=22){
+                   $shuangse=M('shuangse');
                    $todaynumber='未开';
+                   if(count($tinfo = $shuangse->order('times desc')->limit(1)->select())==1) {
+                       $stimes = $tinfo[0]['times'];
+                   }
                }else{
                    $tmap['kai_time'] = strtotime(date('Y-m-d', strtotime('today')));
-
                    $shuangse=M('shuangse');
                    if(count($tinfo = $shuangse->order('times desc')->limit(1)->select())==1) {
                        $stimes=$tinfo[0]['times'];
