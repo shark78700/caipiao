@@ -4,3 +4,21 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
 ERR: 无法加载模块:Favicon
 
+[ 2017-10-01T16:38:38+08:00 ] 192.168.20.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.063658s ]
+ERR: 无法加载模块:Caipiao
+
+[ 2017-10-01T16:38:38+08:00 ] 192.168.20.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-10-01T16:38:44+08:00 ] 192.168.20.1 /caipiao/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001292s ]
+ERR: 无法加载模块:Caipiao
+

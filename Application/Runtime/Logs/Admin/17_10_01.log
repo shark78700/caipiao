@@ -344,3 +344,218 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
 
+[ 2017-10-01T16:45:07+08:00 ] 192.168.20.1 /Admin/Curl/Show/times/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+
+[ 2017-10-01T16:49:34+08:00 ] 192.168.20.1 /Admin/Curl/Show/times/2017111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-10-01T16:50:16+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-10-01T16:50:17+08:00 ] 192.168.20.1 /Admin/Curlyu/Indata/times/2017111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyuce` [ RunTime:0.0394s ]
+SQL: SELECT `times` FROM `bocai_shuangseyuce` ORDER BY times desc LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-10-01T16:50:19+08:00 ] 192.168.20.1 /Admin/Curl/Curl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+NOTIC: [2048] Declaration of Admin\Controller\CurlController::Show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0022s ]
+SQL: SELECT `times` FROM `bocai_shuangse` WHERE ( `times` = '2017111' OR `times` = '2017112' )  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: allcode /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0020s ]
+SQL: INSERT INTO `bocai_shuangse` (`times`,`allcode`,`red1`,`red2`,`red3`,`red4`,`red5`,`red6`,`blue`) VALUES ('2017112','03,10,14,16,22,23,11','03','10','14','16','22','23','11') [ RunTime:0.0208s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyi` [ RunTime:0.0025s ]
+SQL: INSERT INTO `bocai_shuangseyi` (`times`,`redyilou`,`blueyilou`) VALUES ('2017112','[\"2\",\"13\",\"0\",\"10\",\"1\",\"7\",\"4\",\"3\",\"5\",\"0\",\"11\",\"2\",\"18\",\"0\",\"2\",\"0\",\"1\",\"3\",\"1\",\"4\",\"3\",\"0\",\"0\",\"12\",\"6\",\"7\",\"6\",\"11\",\"1\",\"5\",\"6\",\"1\",\"9\"]','[\"4\",\"6\",\"15\",\"13\",\"31\",\"5\",\"7\",\"32\",\"20\",\"30\",\"0\",\"1\",\"36\",\"2\",\"44\",\"3\"]') [ RunTime:0.0013s ]
+
+[ 2017-10-01T16:50:24+08:00 ] 192.168.20.1 /Admin/Curl/Show/times/2017112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-10-01T16:50:25+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-10-01T16:50:26+08:00 ] 192.168.20.1 /Admin/Curlyu/Indata/times/2017112
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000157s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyuce` [ RunTime:0.0007s ]
+SQL: SELECT `times` FROM `bocai_shuangseyuce` ORDER BY times desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `bocai_shuangseyuce` (`code`,`times`) VALUES ('[\'24\', \'11\', \'33\', \'28\', \'9\', \'21\', \'5\', \'10\']','2017113') [ RunTime:0.0110s ]
+
+[ 2017-10-01T16:50:33+08:00 ] 192.168.20.1 /Admin/Curl/Curl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+NOTIC: [2048] Declaration of Admin\Controller\CurlController::Show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0026s ]
+SQL: SELECT `times` FROM `bocai_shuangse` WHERE ( `times` = '2017111' OR `times` = '2017112' OR `times` = '2017113' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: allcode /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0018s ]
+SQL: INSERT INTO `bocai_shuangse` (`times`,`allcode`,`red1`,`red2`,`red3`,`red4`,`red5`,`red6`,`blue`) VALUES ('2017113','04,06,16,27,29,33,05','04','06','16','27','29','33','05') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyi` [ RunTime:0.0012s ]
+SQL: INSERT INTO `bocai_shuangseyi` (`times`,`redyilou`,`blueyilou`) VALUES ('2017113','[\"3\",\"14\",\"1\",\"0\",\"2\",\"0\",\"5\",\"4\",\"6\",\"1\",\"12\",\"3\",\"19\",\"1\",\"3\",\"0\",\"2\",\"4\",\"2\",\"5\",\"4\",\"1\",\"1\",\"13\",\"7\",\"8\",\"0\",\"12\",\"0\",\"6\",\"7\",\"2\",\"0\"]','[\"5\",\"7\",\"16\",\"14\",\"0\",\"6\",\"8\",\"33\",\"21\",\"31\",\"1\",\"2\",\"37\",\"3\",\"45\",\"4\"]') [ RunTime:0.0006s ]
+
+[ 2017-10-01T16:50:39+08:00 ] 192.168.20.1 /Admin/Curl/Show/times/2017113
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+
+[ 2017-10-01T16:50:44+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-10-01T16:50:46+08:00 ] 192.168.20.1 /Admin/Curlyu/Indata/times/2017113
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyuce` [ RunTime:0.0007s ]
+SQL: SELECT `times` FROM `bocai_shuangseyuce` ORDER BY times desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `bocai_shuangseyuce` (`code`,`times`) VALUES ('[\'24\', \'11\', \'21\', \'25\', \'31\', \'28\', \'9\', \'8\', \'10\']','2017114') [ RunTime:0.0137s ]
+
+[ 2017-10-01T16:50:48+08:00 ] 192.168.20.1 /Admin/Curl/Curl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000184s ]
+NOTIC: [2048] Declaration of Admin\Controller\CurlController::Show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 0 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0265s ]
+SQL: SELECT `times` FROM `bocai_shuangse` WHERE ( `times` = '2017111' OR `times` = '2017112' OR `times` = '2017113' OR `times` = '2017114' )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: allcode /var/www/caipiao/Application/Admin/Controller/CurlController.class.php 第 116 行.
+SQL: SHOW COLUMNS FROM `bocai_shuangse` [ RunTime:0.0008s ]
+SQL: INSERT INTO `bocai_shuangse` (`times`,`allcode`,`red1`,`red2`,`red3`,`red4`,`red5`,`red6`,`blue`) VALUES ('2017114','06,12,13,15,18,26,13','06','12','13','15','18','26','13') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bocai_shuangseyi` [ RunTime:0.0005s ]
+SQL: INSERT INTO `bocai_shuangseyi` (`times`,`redyilou`,`blueyilou`) VALUES ('2017114','[\"4\",\"15\",\"2\",\"1\",\"3\",\"0\",\"6\",\"5\",\"7\",\"2\",\"13\",\"0\",\"0\",\"2\",\"0\",\"1\",\"3\",\"0\",\"3\",\"6\",\"5\",\"2\",\"2\",\"14\",\"8\",\"0\",\"1\",\"13\",\"1\",\"7\",\"8\",\"3\",\"1\"]','[\"6\",\"8\",\"17\",\"15\",\"1\",\"7\",\"9\",\"34\",\"22\",\"32\",\"2\",\"3\",\"0\",\"4\",\"46\",\"5\"]') [ RunTime:0.0003s ]
+
+[ 2017-10-01T16:50:54+08:00 ] 192.168.20.1 /Admin/Curl/Show/times/2017114
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-10-01T16:50:55+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000184s ]
+
+[ 2017-10-01T16:51:51+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-10-01T16:51:53+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000261s ]
+
+[ 2017-10-01T16:51:54+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-10-01T16:52:44+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-10-01T16:52:45+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-10-01T16:52:45+08:00 ] 192.168.20.1 /Admin/Curlyu/Getcode
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000175s ]
+

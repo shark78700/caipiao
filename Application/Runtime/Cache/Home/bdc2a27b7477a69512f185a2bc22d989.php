@@ -78,10 +78,10 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-6"><h2><a href="/Admin/Curl/Show/times/<?php echo ($times); ?>">双色球</a></h2>
+    <div class="col-lg-6"><h2><a href="/Admin/Curl/Show/times/<?php echo ($stimes); ?>">双色球</a></h2>
 
     </div>
-    <div class="col-lg-6"><h2><a href="/Admin/Pale/Show/times/<?php echo ($times); ?>">大乐透</a></h2>
+    <div class="col-lg-6"><h2><a href="/Admin/Pale/Show/times/<?php echo ($ltimes); ?>">大乐透</a></h2>
 
     </div>
    <!-- <div class="col-lg-4"><h2><a>足彩</a></h2>
