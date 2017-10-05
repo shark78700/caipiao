@@ -1,4 +1,5 @@
-./idea/
+.idea/
 ./Application/Home/Conf/config.php
 ./Application/Admin/Conf/config.php
 ./Application/Runtime/Cache
+.gitignore

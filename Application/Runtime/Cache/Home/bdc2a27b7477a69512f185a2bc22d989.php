@@ -3,9 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link href="/Public/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="/Public/bootstrap-3.3.5-dist/js/jquery-3.1.0.js"></script>
-    <script src="/Public/bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
+    <link href="/caipiao/Public/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="/caipiao/Public/bootstrap-3.3.5-dist/js/jquery-3.1.0.js"></script>
+    <script src="/caipiao/Public/bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
     <!--<script type="text/javascript">
         $(document).ready(function () {
             var haome
@@ -78,10 +78,10 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-6"><h2><a href="/Admin/Curl/Show/times/<?php echo ($stimes); ?>">双色球</a></h2>
+    <div class="col-lg-6"><h2><a href="/caipiao/Admin/Curl/Show/times/<?php echo ($stimes); ?>">双色球</a></h2>
 
     </div>
-    <div class="col-lg-6"><h2><a href="/Admin/Pale/Show/times/<?php echo ($ltimes); ?>">大乐透</a></h2>
+    <div class="col-lg-6"><h2><a href="/caipiao/Admin/Pale/Show/times/<?php echo ($ltimes); ?>">大乐透</a></h2>
 
     </div>
    <!-- <div class="col-lg-4"><h2><a>足彩</a></h2>

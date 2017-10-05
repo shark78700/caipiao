@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="/Public/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="/Public/bootstrap-3.3.5-dist/js/jquery-3.1.0.js"></script>
-    <script src="/Public/bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
+    <link href="/caipiao/Public/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="/caipiao/Public/bootstrap-3.3.5-dist/js/jquery-3.1.0.js"></script>
+    <script src="/caipiao/Public/bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
             $("input[name='code']").hide();
@@ -24,7 +24,7 @@
                     return false;
                 }
                 $.ajax({
-                    url: "/Admin/<?php echo ($url); ?>",
+                    url: "/caipiao/Admin/<?php echo ($url); ?>",
                     type: "POST",
                     data: {
                         address: address,
@@ -81,7 +81,7 @@
                 if(myt=='大乐透获取数据')
                 {
                     $.ajax({
-                        url: "/Admin/Curlyu/Getcodeb",
+                        url: "/caipiao/Admin/Curlyu/Getcodeb",
                         type: "POST",
                         data: {
                             times: times,
@@ -104,7 +104,7 @@
                     })
                 }else{
                     $.ajax({
-                        url: "/Admin/Curlyu/Getcode",
+                        url: "/caipiao/Admin/Curlyu/Getcode",
                         type: "POST",
                         data: {
                             times: times,
@@ -136,7 +136,7 @@
                 }
                 if (myt == '大乐透获取数据') {
                     $.ajax({
-                        url: "/Admin/Curlyu/Indatab/times/<?php echo ($times); ?>",
+                        url: "/caipiao/Admin/Curlyu/Indatab/times/<?php echo ($times); ?>",
                         type: "POST",
                         data: {
 
@@ -167,7 +167,7 @@
                     })
                 } else {
                     $.ajax({
-                        url: "/Admin/Curlyu/Indata/times/<?php echo ($times); ?>",
+                        url: "/caipiao/Admin/Curlyu/Indata/times/<?php echo ($times); ?>",
                         type: "POST",
                         data: {
 
@@ -199,7 +199,7 @@
             })
 
             $("button[name='bidui']").click(function () {
-                window.location.href="/Admin/Bidui/Biduishuang"
+                window.location.href="/caipiao/Admin/Bidui/Biduishuang"
             })
         })
     </script>
