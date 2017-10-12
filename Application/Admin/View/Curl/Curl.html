@@ -11,8 +11,9 @@
             $("input[name='code']").hide();
             $("p[name='respo']").hide();
             $("p[name='baocun']").hide();
-            $("button[name='back']").click(function () {
-                history.go(-1);
+            $("button[name='goback']").click(function () {
+                var add="http://"+top.location.hostname+"__ROOT__/";
+                window.location.replace(add)
             })
             $("button[name='sub']").click(function () {
                 $("p[name='respo']").html('');
@@ -217,8 +218,8 @@
                     <input type="input" class="form-control" id="address" name="address">
                 </div>
                 <button  class="btn btn-default" name="sub">确定</button>
-                <button  class="btn btn-default" name="back" style="margin-left: 88%">返回</button>
             </form>
+            <button  class="btn btn-default" name="goback" style="margin-left: 88%">返回</button>
         </div>
         <div class="col-xs-6 col-xs-offset-3" style="padding-top: 1%">
             <button class="btn btn-default" name="yuce">预测号码</button>
