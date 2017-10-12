@@ -58,7 +58,7 @@ class PaleController extends Controller
                         $yilou[$key][] = 0;
                     }
                     if (strpos($value1, 'yl02') !== false || strpos($value1, 'yl01') !== false || strpos($value1, 'bg_p') !== false||strpos($value1, 'bg_bl') !== false) {
-                        if  (strpos($value1, 'bg_p') !== false||strpos($value1, 'bg_bl')){
+                        if  (strpos($value1, 'bg_p') !== false||strpos($value1, 'bg_bl')!=false){
                             preg_match_all('/\d+/', $value1, $arry);
                             $yilou[$key][] = $arry[0][0];
                         }else {

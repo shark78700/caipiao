@@ -58,7 +58,6 @@ class Jisuan
                 
             }
 
-
             $timesshuangse=json_encode(array('red'=>$red,'blue'=>$blue));
            /* var_dump($timesshuangse);
             var_dump($shuangse1[count($shuangse1)-1]['times'].'shuangse');*/
@@ -79,13 +78,7 @@ class Jisuan
                 
             }
            return $redis->get($shuangse1[count($shuangse1)-1]['times'].'shuangse');
-
-
-
-
-
-
-
+            
         }
 
     }

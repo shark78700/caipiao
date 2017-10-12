@@ -16,7 +16,7 @@
         }
         td{
             text-align: center;
-            font-size: 5px;
+            font-size: 1px;
         }
         /*.page span{
             display: block;
@@ -27,23 +27,30 @@
             width: auto;
         }*/
         .page div{
-
             width: 80%;
             margin: auto;
             font-size: 24px;
-
         }
 
     </style>
     <script type="text/javascript">
         $(document).ready(function () {
             var tdl=$('td').length;
+            var sum=0;
             for(var i=0;i<tdl;i++){
 
                 if($('td').eq(i).html().substr(0,1)==','){
-                    var mystr=$('td').eq(i).html().substr(1);
-                    $('td').eq(i).html(mystr);
+                    if(sum<6){
+                        $('td').eq(i).html('<img src="__PUBLIC__/image/redball.png" width="15px" height="15px">');
+                        sum++;
+                    }else{
+                        $('td').eq(i).html('<img src="__PUBLIC__/image/blueball.png" width="15px" height="15px">');
+                        sum++;
+                    }
                     $('td').eq(i).css('background-color','#DDA0DD');
+                    if(sum>6){
+                        sum=0;
+                    }
                 }
             }
 
@@ -65,24 +72,25 @@
                     <td></td>
                     <td colspan="33">红球</td>
                     <td colspan="16">蓝球</td>
-                    <td colspan="7">开奖</td>
+                    <!--<td colspan="7">开奖</td>-->
                 </tr>
                 <tr class="success">
-
                     <td>期数</td>
                     <volist name="reball" id="reb">
-                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
+                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"><p>{{$reball.$key}}</p></td>
                     </volist>
                     <volist name="buleball" id="bub">
-                    <td><img src="__PUBLIC__/image/blueball.png" width="15px" height="15px"></td></volist>
-                    <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
+                    <td><img src="__PUBLIC__/image/blueball.png" width="15px" height="15px"><p>{{$buleball.$key}}</p></td>
+                    </volist>
+                    <td></td>
+                   <!-- <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
                     <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
                     <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
                     <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
                     <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
                     <td><img src="__PUBLIC__/image/redball.png" width="15px" height="15px"></td>
                     <td><img src="__PUBLIC__/image/blueball.png" width="15px" height="15px"></td>
-                   <!-- <td>开奖时间</td>-->
+                    <td>开奖时间</td>-->
                 </tr>
                 <volist name="jiang" id="jiang">
                     <tr class="danger">
@@ -93,40 +101,56 @@
                             <td name="red">{{$reb}}</td>
                         </volist>
                         <volist name="jiang.allblue" id="bub">
-                            <td style="background-color: #b9def0 ">{{$bub}}</td></volist>
-                        <td>{{$jiang.red1}}</td>
+                            <td style="background-color: #b9def0 ">{{$bub}}</td>
+                        </volist>
+                        <td></td>
+                       <!-- <td>{{$jiang.red1}}</td>
                         <td>{{$jiang.red2}}</td>
                         <td>{{$jiang.red3}}</td>
                         <td>{{$jiang.red4}}</td>
                         <td>{{$jiang.red5}}</td>
                         <td>{{$jiang.red6}}</td>
-                        <td style="background-color: #b9def0 ">{{$jiang.blue}}</td>
+                        <td style="background-color: #b9def0 ">{{$jiang.blue}}</td>-->
                       <!--  <td>{{}}</td>-->
                     </tr>
                 </volist>
                 <tr>
-                    <td>当前遗漏：</td>
+                    <td title="当前遗漏值">遗漏：</td>
+                    <volist name="nowlo.redyilou" id="redyilou">
+                        <td>{{$redyilou}}</td>
+                    </volist>
+                    <volist name="nowlo.blueyilou" id="blueyilou">
+                        <td>{{$blueyilou}}</td>
+                    </volist>
+                    <td></td>
 
                 </tr>
                 <tr>
-                    <td>出现总次数：</td>
+                    <td title="当前已经出现概率">概率：</td>
+                    <volist name="chuxianred" id="chr">
+                        <td>{{$chr}}</td>
+                    </volist>
+                    <volist name="chuxianblue" id="chb">
+                        <td>{{$chb}}</td>
+                    </volist>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td title="当前已经出现次数">次数：</td>
                     <volist name="timesshuangse.red" id="tsr">
                         <td>{{$tsr}}</td>
                     </volist>
                     <volist name="timesshuangse.blue" id="tsb">
                         <td>{{$tsb}}</td>
                     </volist>
-                </tr>
-                <tr>
                     <td></td>
-
                 </tr>
+
             </table>
 
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-offset-4 page" >
-
                {{$show}}
             </div>
         </div>
