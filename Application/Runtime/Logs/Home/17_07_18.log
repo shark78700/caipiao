@@ -1,6 +1,0 @@
-[ 2017-07-18T08:57:36+08:00 ] 192.168.20.1 /caipiao/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000372s ]
-INFO: [ app_init ] --END-- [ RunTime:0.005242s ]
-ERR: Redis server went away
-
