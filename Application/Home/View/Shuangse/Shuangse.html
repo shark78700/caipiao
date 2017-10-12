@@ -115,33 +115,33 @@
                     </tr>
                 </volist>
                 <tr>
-                    <td title="当前遗漏值">遗漏：</td>
+                    <td title="当前遗漏值 平均红球遗漏：{{$pingyired}} 平均蓝球遗漏：{{$pingyiblue}}">遗漏：</td>
                     <volist name="nowlo.redyilou" id="redyilou">
-                        <td>{{$redyilou}}</td>
+                        <td title="平均红球遗漏：{{$pingyired}}">{{$redyilou}}</td>
                     </volist>
                     <volist name="nowlo.blueyilou" id="blueyilou">
-                        <td>{{$blueyilou}}</td>
+                        <td title="平均蓝球遗漏：{{$pingyiblue}}">{{$blueyilou}}</td>
                     </volist>
                     <td></td>
 
                 </tr>
                 <tr>
-                    <td title="当前已经出现概率">概率：</td>
-                    <volist name="chuxianred" id="chr">
-                        <td>{{$chr}}</td>
+                    <td title="当前已经出现概率 平均红球概率：{{$pingchured}}  平均蓝球概率：{{$pingchublue}}">概率：</td>
+                    <volist name="chuxianred" id="chr" >
+                        <td title="平均红球概率：{{$pingchured}}">{{$chr}}</td>
                     </volist>
-                    <volist name="chuxianblue" id="chb">
-                        <td>{{$chb}}</td>
+                    <volist name="chuxianblue" id="chb" >
+                        <td title="平均蓝球概率：{{$pingchublue}}">{{$chb}}</td>
                     </volist>
                     <td></td>
                 </tr>
                 <tr>
-                    <td title="当前已经出现次数">次数：</td>
+                    <td title="当前已经出现次数 平均红球出现次数：{{$pingcired}} 平均蓝球出现次数：{{$pingciblue}}">次数：</td>
                     <volist name="timesshuangse.red" id="tsr">
-                        <td>{{$tsr}}</td>
+                        <td title="平均红球出现次数：{{$pingcired}}">{{$tsr}}</td>
                     </volist>
                     <volist name="timesshuangse.blue" id="tsb">
-                        <td>{{$tsb}}</td>
+                        <td title="平均蓝球出现次数：{{$pingciblue}}">{{$tsb}}</td>
                     </volist>
                     <td></td>
                 </tr>
